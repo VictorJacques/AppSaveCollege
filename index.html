@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Olá</p>
+    <script>
+      function average(n1, n2, n3, n4, n5) {
+        return (n1 + n2 + n3 + n4 + n5) / 5;
+      }
+
+      function approved(name, grade) {
+        if (grade >= 7) {
+          console.log(`${name} passou em matemática com nota ${grade}`);
+        } else {
+          console.log(`${name} não passou em matemática`);
+        }
+      }
+
+      var students = [
+        {
+          name: "Victor",
+          height: 180,
+          age: 20,
+          gender: "Masculino",
+          room: 201,
+          math: 10,
+        },
+        {
+          name: "Donavan",
+          height: 170,
+          age: 22,
+          gender: "Masculino",
+          room: 302,
+          math: 6,
+        },
+        {
+          name: "Davi",
+          height: 178,
+          age: 22,
+          gender: "Masculino",
+          room: 206,
+          math: 5,
+        },
+        {
+          name: "Isabela",
+          height: 165,
+          age: 20,
+          gender: "Feminino",
+          room: 201,
+          math: 8,
+        },
+        {
+          name: "Matheus",
+          height: 183,
+          age: 21,
+          gender: "Masculino",
+          room: 202,
+          math: 9,
+        },
+      ];
+
+      console.log(students);
+      console.log(
+        average(
+          students[0].math,
+          students[1].math,
+          students[2].math,
+          students[3].math,
+          students[4].math
+        )
+      );
+
+      approved(students[0].name, students[0].math);
+    </script>
+  </body>
+</html>
